@@ -35,7 +35,7 @@ function buildMetadata(sample) {
   d3.json("samples.json").then((data) => {
     var metadata = data.metadata;
     // Filter the data for the object with the desired sample number
-    var resultArray = metadata.filter(sample_object => sample_object.id == sample);
+    var resultArray = metadata.filter(sampleObj => sampleObj.id == sample);
     var result = resultArray[0];
     // Use d3 to select the panel with id of `#sample-metadata`
     var PANEL = d3.select("#sample-metadata");
@@ -59,7 +59,7 @@ function buildCharts(sample) {
     // 3. Create a variable that holds the samples array. 
     var samples = data.samples;
     // 4. Create a variable that filters the samples for the object with the desired sample number.
-    var sample_number = samples.filter(sample_object => sample_object.id == sample);
+    var sample_number = samples.filter(sampleObj => sampleObj.id == sample);
     console.log(sample_number)
     //  5. Create a variable that holds the first sample in the array.
     var firstSample = sample_number[0];
@@ -131,7 +131,7 @@ function buildCharts(sample) {
 
     // 1. Create a variable that filters the metadata array for the object with the desired sample number.
     var metadata = data.metadata;
-    var resultArray = metadata.filter(sample_object => sample_object.id == sample);
+    var resultArray = metadata.filter(sampleObj => sampleObj.id == sample);
     
     // Create a variable that holds the first sample in the array.
     var result = resultArray[0];
