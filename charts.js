@@ -169,7 +169,7 @@ function buildCharts(sample) {
     // 5. Create the layout for the gauge chart.
     var gauge_layout = { 
       title: "Belly Button Washing Frequency",
-      titlefont:{"size":20, family='Arial Black'}
+      titlefont:{"size":20, family='Arial'}
      
     };
 
