@@ -168,9 +168,7 @@ function buildCharts(sample) {
     
     // 5. Create the layout for the gauge chart.
     var gauge_layout = { 
-      title: "Belly Button Washing Frequency",
-      titlefont:{"size":20, family='Arial'}
-     
+      title: "Belly Button Washing Frequency",    
     };
 
     // 6. Use Plotly to plot the gauge data and layout.
